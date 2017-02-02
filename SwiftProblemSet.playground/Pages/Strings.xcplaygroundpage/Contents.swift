@@ -20,11 +20,11 @@ let newLottaLikes = lottaLikes.replacingOccurrences(of: "like", with: " ") // li
 //: ### Exercise 8
 //: Josie has been saving her pennies and has them all counted up. Using string interpoltaion, write code that, given a number of pennies, prints out how much money Josie has in dollars and cents.
 //: **Hint**: [The remainder operator](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/BasicOperators.html) , %, will come in handy.
-let numOfPennies = 567 //1 Pennies = 14.34
+let numOfPennies = 567 //1 pound = 100 pennies, 1 pound = 1.26 dollars(update 2/2/2017)
 var x100 = numOfPennies/100 //Separation of white bits
 var x10 = (numOfPennies - x100*100)/10 //Separation of ten
 var x1 = numOfPennies % 10 //Separate a bit
-print("Josie has \(x100 + x10)")
+print("Josie has $\(x100).\(x10)\(x1)")
 //desired output = "$5.67"
 //: ### Exercise 9
 //: Use string interpolation to replace the X with an expression for percent monthly earnings spent on rent.
