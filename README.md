@@ -1,4 +1,4 @@
-# swifProblemSetMaster-Udacity
+# swiftProblemSet-Udacity
 
 ### Filename
 ios-nd-swift-problem-set-master
