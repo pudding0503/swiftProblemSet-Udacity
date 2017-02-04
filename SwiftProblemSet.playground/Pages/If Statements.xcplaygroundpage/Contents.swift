@@ -14,6 +14,7 @@ import Foundation
 func rest() {
     print("Stay in bed.")
 }
+
 var sick = true
 if sick == true {
     rest()
@@ -66,17 +67,22 @@ func release() {
 }
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
-    if bugs <= 10 {
-        if hasMusic == true {
-            if numberOfLevels <= 5 {
+    if bugs < 10 {  //bugs less than less than 10 means: bugs < 10 not bugs <= 10
+        if music == true {
+            if levels > 5 {  //has more than 5 levels means: Levels > 5 not Levels >= 5
                 release()
             } else { print("Levels less than 5") }
-        } else { print("No music") }
-    } else { print("bugs more than 10") }
+        } else { print("Please add music") }
+    } else { print("Bugs more than 10") }
 }
 
-checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
+//check out
+checkForRelease(bugs: 9, music: true, levels: 7)
 
+//please check the function with all possible cases
+checkForRelease(bugs: 10, music: true, levels: 5) //Bugs more than 10
+checkForRelease(bugs: 9, music: false, levels: 7) //Please add music
+checkForRelease(bugs: 9, music: true, levels: 2) //Levels less than 5
 /*:
  ### Exercise 13
  

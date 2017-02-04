@@ -53,7 +53,7 @@ func median(num1: Int, num2: Int, num3: Int) -> Int {
         }
     }
     print("\(middle)")
-    return middle
+    return [num1,num2,num3].sorted()[1]
 }
 
 median(num1: 1, num2: 5, num3: 6)
@@ -63,6 +63,7 @@ median(num1: -10, num2: 10, num3: 0)
 median(num1: 0, num2: 0, num3: 0)
 median(num1: 2, num2: 3, num3: 1)
 median(num1: 2, num2: 2, num3: 1)
+
 /* Example Function Call
  
  median(num1: 1, num2: 5, num3: 6) // 5
@@ -85,40 +86,52 @@ median(num1: 2, num2: 2, num3: 1)
  **Note**: It is assumed that the input string is given in English.
  */
 func beginsWithVowel(letter: String) -> Bool {
-    if letter.characters[letter.startIndex] == "A" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "a" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "E" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "e" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "I" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "i" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "O" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "o" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "U" {
-        return true
-    }
-    else if letter.characters[letter.startIndex] == "u" {
-        return true
-    }
-    else {
+    if letter != "" {  //If the input string is "", then return false.
+        if letter.characters[letter.startIndex] == "A" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "a" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "E" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "e" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "I" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "i" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "O" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "o" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "U" {
+            return true
+        }
+        else if letter.characters[letter.startIndex] == "u" {
+            return true
+        }
+        else {
+            return false
+        }
+    } else {  //letter != "" means letter != nil
         return false
     }
 }
+
+beginsWithVowel(letter: "Apples") // true
+beginsWithVowel(letter: "pIG") // false
+beginsWithVowel(letter: "oink") // true
+beginsWithVowel(letter: "udacity") // true
+
+//Test if the input string is "". If the input string is "", then return false.
+beginsWithVowel(letter: "") // false
 
 /* Example Function Call
  
@@ -129,7 +142,6 @@ func beginsWithVowel(letter: String) -> Bool {
  beginsWithVowel("") // false
  
  */
-
 /*:
  ### Exercise 17
  
@@ -142,51 +154,20 @@ func beginsWithVowel(letter: String) -> Bool {
  **Hint**: Re-use the `beginsWithVowel` function.
  */
 func funWithWords(word: String) -> String {
-    if word.characters[word.startIndex] == "A" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "a" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "E" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "e" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "I" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "i" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "O" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "o" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "U" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else if word.characters[word.startIndex] == "u" {
-        word.uppercased()
-        return word.uppercased()
-    }
-    else {
-        word.lowercased()
+    if beginsWithVowel(letter: word) == false {  //re-use the beginsWithVowel function
         return word.lowercased()
     }
+    else if beginsWithVowel(letter: word) == true {
+        return word.uppercased()
+    } else {
+        return "" //fix function crashes on string ""
+    }
 }
+funWithWords(word: "Apples")
+funWithWords(word: "pIG")
+funWithWords(word: "oink")
+funWithWords(word: "udacity")
+funWithWords(word: "")
 
 /* Example Function Call
  

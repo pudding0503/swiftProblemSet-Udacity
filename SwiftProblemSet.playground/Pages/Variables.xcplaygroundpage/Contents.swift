@@ -40,7 +40,7 @@ stringToReverse = String(arrayOfCharacters)
 - a `String` value representing what a user types into the status update area.
 */
 var hungerLevelOfAnAnimal: Int
-var scoreToWin: Int
+let scoreToWin: Int //constant - there should be one value representing the score always required to win a game.
 let studentBirthday: String
 var userTypes: String
 /*:
