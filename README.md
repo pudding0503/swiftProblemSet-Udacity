@@ -1,8 +1,12 @@
 # swiftProblemSet-Udacity
 
 ### Filename
-Swift Problem Set
 
+![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
+
+#### Swift Problem Set
+
+This repository contains starter code for the Swift Problem Set project in Udacity's iOS Nanodegree.
 ### Student
 Haoning Wu
 
