@@ -1,12 +1,16 @@
 # swiftProblemSet-Udacity
 
 ### Filename
-ios-nd-swift-problem-set-master
+Swift Problem Set
 
 ### Student
 Haoning Wu
 
-Udacity course: [Swift 入门](https://cn.udacity.com/course/swift-for-beginners--ud1022)
+My Website: [Scenery Architecture](http://www.nousbuild.org)
+
+My E-mail: [honey@nousbuild.com](mailto:honey@nousbuild.com)
+
+This course on Udacity: [Swift 入门](https://cn.udacity.com/course/swift-for-beginners--ud1022)
 
 
 ### Project submission
