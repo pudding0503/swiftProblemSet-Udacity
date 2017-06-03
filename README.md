@@ -1,5 +1,5 @@
-# swiftProblemSet-Udacity ![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
-
+# swiftProblemSet-Udacity
+![Platform iOS](https://img.shields.io/badge/nanodegree-iOS-blue.svg)
 ### Filename
 
 #### Swift Problem Set
