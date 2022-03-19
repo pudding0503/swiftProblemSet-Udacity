@@ -8,10 +8,6 @@ This repository contains starter code for the Swift Problem Set project in Udaci
 ### Student
 Haoning Wu
 
-My Website: [Scenery Architecture](http://www.nousbuild.org)
-
-My E-mail: [honey@nousbuild.com](mailto:honey@nousbuild.com)
-
 This course on Udacity: [Swift 入门](https://cn.udacity.com/course/swift-for-beginners--ud1022)
 
 
